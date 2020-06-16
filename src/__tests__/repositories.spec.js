@@ -116,5 +116,7 @@ describe("Repositories", () => {
 
   it("should not be able to delete a repository that does not exist", async () => {
     await request(app).delete(`/repositories/123`).expect(400);
+
+    console.log("\n\n============================\n=       Voa Foguete!       =\n============================")
   });
 });
